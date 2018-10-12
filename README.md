@@ -80,6 +80,6 @@ to get rid of all WinPcap files. You can also run "winpcap_installer_test.py che
 ## Contacts
 Please feel free to contact us if you have any questions/suggestions/feedback related 
 to the tool. Use the following coordinates:  
-    Twitter: @zero_wf from @kl_secservices  
-    Github:  klsecservices  
+    **Twitter:** @zero_wf from @kl_secservices  
+    **Github:**  @github/klsecservices  
 Any contribution to the project is always welcome!
