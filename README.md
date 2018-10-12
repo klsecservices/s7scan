@@ -56,13 +56,25 @@ The tool currently works with Python 2 only
 ## Use cases
 You can use s7scan in the following form:
 1. Usage with python and scapy installed on the machine. In this case you only need to download **s7scan**, go to its directory and run "python s7scan.py" in the console.
-2. Usage on computers without python. In this case the option is to use pyinstaller. Install it, go to s7scan folder and run "pyinstaller --onefile s7scan.py" to build a stand-alone binary. Then distribute this binary to the target computer and use it.  
+2. Usage on computers without python. In this case the option is to use pyinstaller. Install it, go to s7scan folder and run
+```
+"pyinstaller --onefile s7scan.py"
+```
+to build a stand-alone binary. Then distribute this binary to the target computer and use it.  
 Both use-cases are acceptable on Linux/Windows/Mac.  
 Alternatively, you can use pre-built executables built by pyinstaller in **dist** directory.  
 
 **Note:** on Windows you will need WinPcap (or Npcap) if you want to scan LLC networks. If installing it is not an option, you have 2 alternatives:  
 1. Download and run portable version of Wireshark;
-2. Use the script winpcap_installer_test.py that is included in s7scan. Run "winpcap_installer_test.py install" command in your console, and it will perform silent install of WinPcap. After scanning you can simply run "winpcap_installer.py uninstall" to get rid of all WinPcap files. You can also run "winpcap_installer_test.py check" in order to check whether WinPcap is installed on the machine.  
+2. Use the script winpcap_installer_test.py that is included in s7scan. Run 
+```
+winpcap_installer_test.py install
+```
+command in your console, and it will perform silent install of WinPcap. After scanning you can simply run 
+```
+winpcap_installer.py uninstall
+```
+to get rid of all WinPcap files. You can also run "winpcap_installer_test.py check" in order to check whether WinPcap is installed on the machine.  
 
 ## Contacts
 Please feel free to contact us if you have any questions/suggestions/feedback related 
