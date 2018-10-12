@@ -75,7 +75,11 @@ command in your console, and it will perform silent install of WinPcap. After sc
 ```
 winpcap_installer.py uninstall
 ```
-to get rid of all WinPcap files. You can also run "winpcap_installer_test.py check" in order to check whether WinPcap is installed on the machine.  
+to get rid of all WinPcap files. You can also run 
+```
+winpcap_installer_test.py check
+```
+in order to check whether WinPcap is installed on the machine.  
 
 ## Contacts
 Please feel free to contact us if you have any questions/suggestions/feedback related 
