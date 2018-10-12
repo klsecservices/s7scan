@@ -59,7 +59,7 @@ winpcap_installer_test.py check
 in order to check whether WinPcap is installed on the machine.  
 
 ## Kudos
-`@_moradek_` for help with development    
+`@_moradek_` at twitter for help with development    
 
 ## Disclaimer of warranty
 
