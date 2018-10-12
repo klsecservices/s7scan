@@ -1,28 +1,5 @@
 # s7scan  
 
-## Disclaimer of warranty
-
-THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. 
-EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES 
-PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, 
-INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
-FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF 
-THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST 
-OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.  
-IF ANYONE BELIEVES THAT THIS TOOL HAVE BEEN VIOLATED SOME COPYRIGHTS, PLEASE EMAIL US, 
-AND ALL THE NECESSARY CHANGES WILL BE MADE.
-
-## Less formal disclaimer (or why we had to write the disclaimer at all)
-
-This open-source tool was developed for internal purposes. It was tested on 
-several different PLC families: S7-300, S7-400 and S7-1500. Nevertheless, it's 
-still just a result of a research project, and as always, it may be vulnerable to 
-mistakes and lack of knowledge under some hypothetical circumstances. Neither the
-author of the tool nor Kaspersky Lab are responsible for any possible
-damage caused by the tool to the industrial equipment or any technological and 
-business processes. Use the tool only after considering the consequences, and at
-your own risk.
-
 ## General description
 **s7scan** is a tool that scans networks, enumerates Siemens PLCs and gathers basic information about them, such as PLC firmware and hardwaare version, network configuration and security parameters.
 It is completely written on Python.  
@@ -80,6 +57,32 @@ to get rid of all WinPcap files. You can also run
 winpcap_installer_test.py check
 ```
 in order to check whether WinPcap is installed on the machine.  
+
+## Kudos
+`@_moradek_` for help with development    
+
+## Disclaimer of warranty
+
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. 
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES 
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, 
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF 
+THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST 
+OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.  
+IF ANYONE BELIEVES THAT THIS TOOL HAVE BEEN VIOLATED SOME COPYRIGHTS, PLEASE EMAIL US, 
+AND ALL THE NECESSARY CHANGES WILL BE MADE.
+
+## Less formal disclaimer (or why we had to write the disclaimer at all)
+
+This open-source tool was developed for internal purposes. It was tested on 
+several different PLC families: S7-300, S7-400 and S7-1500. Nevertheless, it's 
+still just a result of a research project, and as always, it may be vulnerable to 
+mistakes and lack of knowledge under some hypothetical circumstances. Neither the
+author of the tool nor Kaspersky Lab are responsible for any possible
+damage caused by the tool to the industrial equipment or any technological and 
+business processes. Use the tool only after considering the consequences, and at
+your own risk.  
 
 ## Contacts
 Please feel free to contact us if you have any questions/suggestions/feedback related 
