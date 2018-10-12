@@ -1,0 +1,14 @@
+# Ignore unnecessary files
+*.pyc
+*.rar
+*.zip
+*.gpg
+*.pcapng
+
+# Ignore unnecessary folders
+build
+docs
+backups
+WinPcap_installer/dist
+# spec files for pyinstaller
+*.spec
