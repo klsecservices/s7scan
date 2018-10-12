@@ -57,6 +57,7 @@ The tool currently works with Python 2 only
 You can use s7scan in the following form:
 1. Usage with python and scapy installed on the machine. In this case you only need to download **s7scan**, go to its directory and run "python s7scan.py" in the console.
 2. Usage on computers without python. In this case the option is to use pyinstaller. Install it, go to s7scan folder and run
+
 ```
 "pyinstaller --onefile s7scan.py"
 ```
