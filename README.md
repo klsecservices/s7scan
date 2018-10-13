@@ -3,7 +3,7 @@
 ## General description
 **s7scan** is a tool that scans networks, enumerates Siemens PLCs and gathers basic information about them, such as PLC firmware and hardwaare version, network configuration and security parameters.
 It is completely written on Python.  
-The tool uses S7 protocol to connect to PLCs and retreive basic information about them. More specifically, it performs "Read SZL" to get information about controllers. Formats of these requests are documented in "Siemens SIMATIC System Software for S7-300/400 System and
+The tool uses S7 protocol to connect to talk toPLCs. More specifically, it performs "Read SZL" to get information about controllers. Formats of these requests are documented in "Siemens SIMATIC System Software for S7-300/400 System and
 Standard Functions. Reference manual", which can be found at the following link:  https://cache.industry.siemens.com/dl/files/574/1214574/att_44504/v1/SFC_e.pdf  
 Main features of the utility:
 1. Identifying all active PLCs in a particular network;
@@ -11,15 +11,17 @@ Main features of the utility:
     a. PLC type;  
     b. Software version;  
     c. Hardware version;  
-    d. Protection settings applied to the PLC (key position, r/w/rw access rights)
-    e. Network configuration of the PLC
+    d. Protection settings applied to the PLC (key position, r/w/rw access rights);  
+    e. Network configuration of the PLC.  
 3. Supporting both TCP/IP and LLC transport protocols.
 4. Ability to be built as a stand-alone binary with pyinstaller  
+
 **s7scan** is based on the utility called "plcscan" from Dmitry Efanov (Positive Research). Comparing this old version, here are main differences:
     - Support of low-level LLC protocol;
     - Showing protection configuration of PLCs;
     - Improvements fo default COTP TSAP checking procedure in order to find all PLCs within racks;
     - Improved stability.  
+    
 The tool is designed to use scapy for crafting and sending low-level LLC packets. Still, for TCP/IP communications it uses standard OS socket interface for simplicity and stability.  
 
 ## What is this tool actually for?
