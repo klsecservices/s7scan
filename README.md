@@ -16,7 +16,7 @@ Main features of the utility:
 3. Supporting both TCP/IP and LLC transport protocols.
 4. Ability to be built as a stand-alone binary with pyinstaller  
 
-**s7scan** is based on the utility called "plcscan" from Dmitry Efanov (Positive Research). Comparing this old version, here are main differences:
+**s7scan** is based on the utility called "plcscan" from Dmitry Efanov (Positive Research). Comparing this old version, here are main differences: 
     - Support of low-level LLC protocol;
     - Showing protection configuration of PLCs;
     - Improvements fo default COTP TSAP checking procedure in order to find all PLCs within racks;
