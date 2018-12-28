@@ -1,0 +1,7 @@
+s7scan v1.03 [Python 2] [Scapy-based]
+1. Improved PLC versions displaying. There is still some confusion with versions of modules
+2. Fixed issue with slashes in paths on different platforms
+
+
+s7scan v1.02 [Python 2] [Scapy-based]
+Initial release version

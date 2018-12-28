@@ -132,7 +132,7 @@ class ModuleID_Record():
                 s += "    Order number: {}\r\n".format(self.order_number)
             else:
                 s += "    {}\r\n".format(self.order_number)
-        s += "    Version: {}.{}".format(self.version, self.version2)
+        s += "    Version: {}.{}.{}".format(self.version, self.version2 >> 8, self.version2 & 0xFF)
         return s
 
 

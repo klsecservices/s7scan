@@ -90,7 +90,7 @@ def get_user_args(argv):
     parser.add_argument("--log-dir", dest="log_dir",
                         help="Path to the directory where scan results will be stored",
                         metavar="LOG_DIR",
-                        default=".\\s7scan_{}".format(datetime.datetime.now().strftime("%Y%m%d_%H%M")))
+                        default=os.path.join(".", "s7scan_{}".format(datetime.datetime.now().strftime("%Y%m%d_%H%M"))))
     parser.add_argument("--no-log", action='store_const',
                         const=True, default=False, dest='no_log',
                         help="Disable saving scan results in files")
@@ -169,8 +169,8 @@ def validate_user_args(args):
         args.ports = scan_ports
     # Check whether the directory for log files exists if args.no_log is not specified
     if not args.no_log:
-        logfile = args.log_dir + "\\" + S7SCAN_LOG_FILE
-        plcfile = args.log_dir + "\\" + S7SCAN_PLC_FILE
+        logfile = os.path.join(args.log_dir, S7SCAN_LOG_FILE)
+        plcfile = os.path.join(args.log_dir, S7SCAN_PLC_FILE)
         if not os.path.isdir(args.log_dir):
             # The directory does not exist. Create it now
             try:
@@ -300,8 +300,8 @@ class PLC_Scanner():
             self.results["Command line arguments"].append(arg.decode(sys.stdin.encoding).encode("utf-8"))
         self.plcs = OrderedDict()
         if log_dir:
-            self.logfile = open(log_dir + "\\" + S7SCAN_LOG_FILE, "wb")
-            self.plcfile = open(log_dir + "\\" + S7SCAN_PLC_FILE, "wb")
+            self.logfile = open(os.path.join(log_dir, S7SCAN_LOG_FILE), "wb")
+            self.plcfile = open(os.path.join(log_dir, S7SCAN_PLC_FILE), "wb")
         else:
             self.logfile = None
             self.plcfile = None
@@ -479,7 +479,7 @@ class PLC_Scanner():
 
 
 def main():
-    print("s7scan v1.02 [Python 2] [Scapy-based]")
+    print("s7scan v1.03 [Python 2] [Scapy-based]")
     # Get user arguments
     parser, args = get_user_args(sys.argv[1:])
     # Validate user arguments
